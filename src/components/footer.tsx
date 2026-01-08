@@ -11,7 +11,6 @@ export function Footer() {
                     <div className="space-y-4">
                         <div className="flex items-center gap-2 mb-4">
                             <div className="relative h-10 w-40">
-                                {/* Using Logo instead of text if possible, or just updating text */}
                                 <span className="text-lg font-bold tracking-tight text-white uppercase">
                                     Heritage <span className="text-primary">Collision</span>
                                 </span>
@@ -52,15 +51,7 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    {/* Newsletter */}
-                    <div className="space-y-4">
-                        <h4 className="text-lg font-bold uppercase tracking-wider">Newsletter</h4>
-                        <p className="text-zinc-500 text-sm">Subscribe for updates and offers.</p>
-                        <div className="flex gap-2">
-                            <input type="email" placeholder="Your Email" className="bg-zinc-900 border-none text-white text-sm px-4 py-2 w-full focus:ring-1 focus:ring-primary outline-none" />
-                            <button className="bg-primary hover:bg-primary/90 px-4 py-2 text-white font-bold uppercase text-xs">Join</button>
-                        </div>
-                    </div>
+                    {/* Newsletter Removed as requested */}
 
                 </div>
             </div>

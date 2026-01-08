@@ -51,8 +51,8 @@ export function ServicesSection() {
         <section id="services" className="py-32 bg-[#111111] text-white">
             <div className="container mx-auto px-4 md:px-6 max-w-7xl">
                 {/* Header */}
-                <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 border-b border-white/10 pb-8">
-                    <div className="space-y-4 max-w-2xl">
+                <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-20 gap-8 border-b border-white/10 pb-8 text-center md:text-left">
+                    <div className="space-y-4 max-w-2xl w-full md:w-auto">
                         <h2 className="text-primary font-bold tracking-[0.3em] uppercase text-sm">
                             Our Expertise
                         </h2>
@@ -61,7 +61,7 @@ export function ServicesSection() {
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/50">Auto Services</span>
                         </h3>
                     </div>
-                    <p className="text-zinc-400 max-w-md text-right md:text-left text-sm leading-relaxed hidden md:block">
+                    <p className="text-zinc-400 max-w-md text-sm leading-relaxed hidden md:block text-right">
                         We combine advanced technology with master craftsmanship to deliver results that exceed factory standards.
                     </p>
                 </div>
@@ -71,14 +71,16 @@ export function ServicesSection() {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="group relative h-[400px] w-full overflow-hidden bg-zinc-900 border border-white/5 transition-all duration-500 hover:border-primary/50"
+                            tabIndex={0} // Makes element focusable on tap/click
+                            className="group relative h-[400px] w-full overflow-hidden bg-zinc-900 border border-white/5 transition-all duration-500 hover:border-primary/50 focus:border-primary/50 outline-none"
                         >
                             {/* Image Background */}
                             <Image
                                 src={service.image}
                                 alt={service.title}
                                 fill
-                                className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-40"
+                                // Added group-focus classes for touch interaction
+                                className="object-cover transition-transform duration-700 group-hover:scale-110 group-focus:scale-110 opacity-60 group-hover:opacity-40 group-focus:opacity-40"
                             />
 
                             {/* Gradient Overlay */}
@@ -86,23 +88,23 @@ export function ServicesSection() {
 
                             {/* Content */}
                             <div className="absolute inset-0 p-8 flex flex-col justify-end items-start transition-all duration-500">
-                                {/* Icon/Number decoration could go here */}
-                                <div className="mb-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform -translate-y-4 group-hover:translate-y-0 text-primary">
+                                {/* Icon/Number decoration */}
+                                <div className="mb-auto opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300 transform -translate-y-4 group-hover:translate-y-0 group-focus:translate-y-0 text-primary">
                                     <ArrowUpRight className="w-8 h-8" />
                                 </div>
 
-                                <div className="transform transition-transform duration-500 group-hover:-translate-y-2">
-                                    <h4 className="text-2xl font-black uppercase tracking-tight text-white mb-2 group-hover:text-primary transition-colors">
+                                <div className="transform transition-transform duration-500 group-hover:-translate-y-2 group-focus:-translate-y-2">
+                                    <h4 className="text-2xl font-black uppercase tracking-tight text-white mb-2 group-hover:text-primary group-focus:text-primary transition-colors">
                                         {service.title}
                                     </h4>
-                                    <p className="text-zinc-400 text-sm leading-relaxed opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-20 transition-all duration-500 overflow-hidden">
+                                    <p className="text-zinc-400 text-sm leading-relaxed opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-20 group-focus:opacity-100 group-focus:max-h-20 transition-all duration-500 overflow-hidden">
                                         {service.description}
                                     </p>
                                 </div>
                             </div>
 
                             {/* Hover Line */}
-                            <div className="absolute bottom-0 left-0 w-0 h-1 bg-primary transition-all duration-500 group-hover:w-full" />
+                            <div className="absolute bottom-0 left-0 w-0 h-1 bg-primary transition-all duration-500 group-hover:w-full group-focus:w-full" />
                         </div>
                     ))}
                 </div>
