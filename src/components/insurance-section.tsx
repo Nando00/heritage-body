@@ -66,32 +66,33 @@ export function InsuranceSection() {
                     </div>
 
                     {/* RIGHT VISUALS */}
-                    <div className="relative h-[600px] w-full order-1 lg:order-2 group">
-                        <div className="absolute inset-0 bg-zinc-100 overflow-hidden">
+                    <div className="relative w-full order-1 lg:order-2 group">
+                        {/* Image Container */}
+                        <div className="relative h-[300px] sm:h-[400px] lg:h-[600px] w-full bg-zinc-100 overflow-hidden">
                             <Image
-                                src="/insurance-bg.png" // Ensure this image is suitable or swap
+                                src="/insurance-bg.png"
                                 alt="Insurance Assistance Specialist"
                                 fill
                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
 
-                        {/* Red Stats Cards Overlay - Positioned at bottom */}
-                        <div className="absolute bottom-12 left-0 w-full flex flex-col sm:flex-row shadow-2xl">
+                        {/* Red Stats Cards - Stacked below on mobile, Absolute overlap on Desktop */}
+                        <div className="relative lg:absolute lg:bottom-12 lg:left-0 w-full flex flex-col sm:flex-row shadow-2xl z-10 -mt-1 lg:mt-0 px-0 gap-0">
                             {/* Card 1 */}
-                            <div className="flex-1 bg-[#cc0000] p-8 text-white text-center border-r border-white/10 relative overflow-hidden">
+                            <div className="flex-1 bg-[#cc0000] p-6 lg:p-8 text-white text-center sm:border-r border-white/10 relative overflow-hidden shadow-lg lg:shadow-none">
                                 <div className="relative z-10">
-                                    <div className="text-xs font-bold uppercase tracking-widest opacity-90 mb-2">Claims Processed</div>
-                                    <div className="text-5xl font-black tracking-tight mb-1">500+</div>
+                                    <div className="text-[10px] lg:text-xs font-bold uppercase tracking-widest opacity-90 mb-2">Claims Processed</div>
+                                    <div className="text-4xl lg:text-5xl font-black tracking-tight mb-1">500+</div>
                                     <div className="text-[10px] font-bold uppercase tracking-wider opacity-75">Claims Handled</div>
                                 </div>
                             </div>
 
                             {/* Card 2 */}
-                            <div className="flex-1 bg-[#D32F2F] p-8 text-white text-center relative overflow-hidden">
+                            <div className="flex-1 bg-[#D32F2F] p-6 lg:p-8 text-white text-center relative overflow-hidden shadow-lg lg:shadow-none">
                                 <div className="relative z-10">
-                                    <div className="text-xs font-bold uppercase tracking-widest opacity-90 mb-2">Total Payout Secured</div>
-                                    <div className="text-5xl font-black tracking-tight mb-1">$2.7M</div>
+                                    <div className="text-[10px] lg:text-xs font-bold uppercase tracking-widest opacity-90 mb-2">Total Payout Secured</div>
+                                    <div className="text-4xl lg:text-5xl font-black tracking-tight mb-1">$2.7M</div>
                                     <div className="text-[10px] font-bold uppercase tracking-wider opacity-75">Recovered for Clients</div>
                                 </div>
                             </div>
