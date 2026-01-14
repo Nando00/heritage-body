@@ -20,7 +20,7 @@ export function Navbar() {
     const navLinks = [
         { href: "/", label: "Home" },
         { href: "#services", label: "Services" },
-        { href: "#about", label: "About" },
+        { href: "/about", label: "About" },
         { href: "#contact", label: "Contact" },
     ]
 
@@ -30,7 +30,7 @@ export function Navbar() {
 
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 relative z-50">
-                    <div className="relative h-12 w-48">
+                    <div className="relative h-14 w-56">
                         <Image
                             src="/trasnparent-heritage-logo.png"
                             alt="Heritage Collision Center"
