@@ -96,7 +96,7 @@ export default function AboutPage() {
                                     </div>
                                     <div>
                                         <p className="text-xs uppercase tracking-widest text-white/40">Phone</p>
-                                        <p className="font-bold">1-800-HERITAGE</p>
+                                        <p className="font-bold">(713) 667-4888</p>
                                     </div>
                                 </div>
 
@@ -106,7 +106,7 @@ export default function AboutPage() {
                                     </div>
                                     <div>
                                         <p className="text-xs uppercase tracking-widest text-white/40">Email</p>
-                                        <p className="font-bold">info@heritage.com</p>
+                                        <p className="font-bold">bodyshop@houstoncardirect.com</p>
                                     </div>
                                 </div>
 
@@ -116,7 +116,7 @@ export default function AboutPage() {
                                     </div>
                                     <div>
                                         <p className="text-xs uppercase tracking-widest text-white/40">Location</p>
-                                        <p className="font-bold">8123 Windfern Rd, Houston, TX 77064</p>
+                                        <p className="font-bold">5450 Gulfton St, Houston, TX 77081</p>
                                     </div>
                                 </div>
                             </div>
