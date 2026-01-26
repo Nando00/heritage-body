@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Heritage Collision Center | Houston Auto Repair",
+  title: "Heritage Paint & Body | Houston Auto Repair",
   description: "Houston's premier auto body shop offering expert collision repair, painting, and insurance assistance.",
 };
 

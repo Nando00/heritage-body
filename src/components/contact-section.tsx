@@ -103,7 +103,7 @@ export function ContactSection() {
                                     <option value="" disabled selected>Select Service...</option>
                                     <option value="collision">Collision Repair</option>
                                     <option value="styling">Auto Styling (Wraps/PPF)</option>
-                                    <option value="paint">Paint Services</option>
+                                    <option value="paint">Paint & Body</option>
                                     <option value="dent">Dent Removal</option>
                                     <option value="glass">Glass Repair</option>
                                     <option value="other">Other</option>

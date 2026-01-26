@@ -63,6 +63,23 @@ export function ContactForm() {
             </div>
 
             <div className="space-y-2">
+                <label htmlFor="service" className="text-sm font-medium text-white/70">Service Type</label>
+                <select
+                    id="service"
+                    className="flex h-10 w-full rounded-md border border-white/10 bg-zinc-900/50 px-3 py-2 text-sm text-white placeholder:text-white/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    defaultValue=""
+                >
+                    <option value="" disabled>Select Service...</option>
+                    <option value="collision">Collision Repair</option>
+                    <option value="styling">Auto Styling (Wraps/PPF)</option>
+                    <option value="paint">Paint & Body</option>
+                    <option value="dent">Dent Removal</option>
+                    <option value="glass">Glass Repair</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-medium text-white/70">Message</label>
                 <Textarea
                     id="message"

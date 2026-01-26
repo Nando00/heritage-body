@@ -30,10 +30,10 @@ export function WhyChooseUs() {
                 <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
                     <div className="space-y-6">
                         <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary font-bold uppercase tracking-wider">
-                            The Paragon Standard
+                            The Heritage Standard
                         </div>
                         <h2 className="text-4xl font-black uppercase tracking-tighter sm:text-5xl">
-                            Why Paragon <br /> <span className="text-primary">Auto Collision?</span>
+                            Why Heritage <br /> <span className="text-primary">Paint & Body?</span>
                         </h2>
                         <p className="text-lg text-zinc-600 max-w-md">
                             We don't just repair cars; we restore confidence. With over 20 years of experience in Houston, we are the trusted choice for luxury and daily driver collision repair.

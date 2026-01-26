@@ -14,7 +14,7 @@ export default function AboutPage() {
                 </div>
 
                 <div className="relative z-10 container mx-auto px-4 text-center">
-                    <h5 className="text-primary font-bold tracking-[0.2em] mb-4 uppercase">Paragon Automotive & Collision</h5>
+                    <h5 className="text-primary font-bold tracking-[0.2em] mb-4 uppercase">Heritage Paint & Body</h5>
                     <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-6">
                         About Us
                     </h1>
@@ -30,7 +30,7 @@ export default function AboutPage() {
                         <div className="relative h-[600px] w-full rounded-sm overflow-hidden border border-white/10 group">
                             <Image
                                 src="/about-collage.png"
-                                alt="Paragon Team and Shop"
+                                alt="Heritage Team and Shop"
                                 fill
                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />
@@ -47,20 +47,20 @@ export default function AboutPage() {
                                 </div>
                                 <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight leading-tight mb-6">
                                     Bringing Quality <br />
-                                    <span className="text-white/50">Collision Service</span> <br />
+                                    <span className="text-white/50">Paint & Body Service</span> <br />
                                     To Houston
                                 </h2>
                             </div>
 
                             <div className="space-y-6 text-lg text-white/60 leading-relaxed font-light">
                                 <p>
-                                    With decades of experience under our belt, Paragon was founded to bring a better quality collision service to the Houston area. We believe that every vehicle deserves the highest standard of care, and every customer deserves transparency and respect.
+                                    With decades of experience under our belt, Heritage Paint & Body was founded to bring a better quality paint and body service to the Houston area. We believe that every vehicle deserves the highest standard of care, and every customer deserves transparency and respect.
                                 </p>
                                 <p>
                                     Our team has helped repair thousands of vehicles each year, and has been involved with many of the local car organizations within our city. We aren't just a shop; we're car enthusiasts dedicated to restoring your vehicle to its pre-accident glory.
                                 </p>
                                 <p>
-                                    Founded by Marwan Kateb, our mission is to ensure each and every customer gets the best service possible at the right price, without compromising on quality or safety.
+                                    Our mission is to ensure each and every customer gets the best service possible at the right price, without compromising on quality or safety.
                                 </p>
                             </div>
 

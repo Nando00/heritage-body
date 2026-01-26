@@ -23,7 +23,7 @@ export function InsuranceSection() {
                         </div>
 
                         <p className="text-zinc-600 text-lg leading-relaxed max-w-xl">
-                            At Heritage Collision Center, we handle everything from the first call to your insurance provider to negotiating the best payout for you. With over 30 years of industry experience, we take care of the paperwork and ensure you get the maximum coverage for your claim.
+                            At Heritage Paint & Body, we handle everything from the first call to your insurance provider to negotiating the best payout for you. With over 30 years of industry experience, we take care of the paperwork and ensure you get the maximum coverage for your claim.
                         </p>
 
                         <div className="space-y-6">

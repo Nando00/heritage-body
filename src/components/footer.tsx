@@ -12,7 +12,7 @@ export function Footer() {
                         <div className="flex items-center gap-2 mb-4">
                             <div className="relative h-10 w-40">
                                 <span className="text-lg font-bold tracking-tight text-white uppercase">
-                                    Heritage <span className="text-primary">Collision</span>
+                                    Heritage <span className="text-primary">Paint & Body</span>
                                 </span>
                             </div>
                         </div>
@@ -69,9 +69,9 @@ export function Footer() {
             {/* Bottom Bar */}
             <div className="bg-black py-6 border-t border-white/5">
                 <div className="container mx-auto px-4 text-center text-xs text-zinc-600 uppercase tracking-widest">
-                    &copy; 2025 Heritage Collision Center. All Rights Reserved.
+                    &copy; 2025 Heritage Paint & Body. All Rights Reserved.
                 </div>
             </div>
-        </footer>
+        </footer >
     )
 }

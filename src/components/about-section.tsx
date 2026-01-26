@@ -43,7 +43,7 @@ export function AboutSection() {
                     <div className="space-y-8">
                         <div className="space-y-4">
                             <h4 className="text-sm font-bold uppercase tracking-widest text-zinc-500">
-                                Why Choose Heritage Collision Center?
+                                Why Choose Heritage Paint & Body?
                             </h4>
                             <h2 className="text-4xl font-black uppercase tracking-tighter sm:text-5xl leading-tight">
                                 Expert Collision Repair <br />
@@ -53,14 +53,14 @@ export function AboutSection() {
                         </div>
 
                         <p className="text-zinc-600 text-lg leading-relaxed">
-                            At Heritage Collision Center, our certified technicians bring over 30 years of experience, offering top-quality auto body repair, dent removal, and paint jobs. Whether it's a minor fender bender or major damage, we handle every aspect of collision repair and insurance claims, providing fast and reliable service right here in Houston.
+                            At Heritage Paint & Body, our certified technicians bring over 30 years of experience, offering top-quality auto body repair, dent removal, and paint jobs. Whether it's a minor fender bender or major damage, we handle every aspect of collision repair and insurance claims, providing fast and reliable service right here in Houston.
                         </p>
 
                         <ul className="space-y-3 text-zinc-700">
                             {[
                                 "Certified Technicians with over 30 Years of Experience",
                                 "Fast, Reliable Auto Body Repair Services in Houston",
-                                "Free Insurance Claim Assistance at Heritage Collision Center",
+                                "Free Insurance Claim Assistance at Heritage Paint & Body",
                                 "Comprehensive Collision Repair, Dent Removal, & Paint Jobs",
                                 "5-Star Customer Reviews and Testimonials"
                             ].map((item, i) => (
@@ -72,7 +72,7 @@ export function AboutSection() {
 
                         <Link href="/contact">
                             <Button size="lg" className="bg-primary hover:bg-black text-white font-bold uppercase tracking-wider rounded-none w-full sm:w-auto">
-                                Book With Heritage Collision Center
+                                Book With Heritage Paint & Body
                             </Button>
                         </Link>
                     </div>

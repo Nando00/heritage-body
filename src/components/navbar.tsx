@@ -33,7 +33,7 @@ export function Navbar() {
                     <div className="relative h-14 w-56">
                         <Image
                             src="/trasnparent-heritage-logo.png"
-                            alt="Heritage Collision Center"
+                            alt="Heritage Paint & Body"
                             fill
                             className="object-contain"
                             priority

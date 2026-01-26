@@ -6,7 +6,7 @@ export function TestimonialsSection() {
         {
             name: "Michael R.",
             rating: 5,
-            text: "Heritage Collision Center did an amazing job on my Mercedes. The paint match is perfect and the staff handled all the insurance paperwork. Highly recommend!"
+            text: "Heritage Paint & Body did an amazing job on my Mercedes. The paint match is perfect and the staff handled all the insurance paperwork. Highly recommend!"
         },
         {
             name: "Sarah L.",

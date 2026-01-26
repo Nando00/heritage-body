@@ -32,7 +32,7 @@ export default function ServicesPage() {
                         Comprehensive Auto Care <br /> For Every Need
                     </h2>
                     <p className="text-white/60 text-lg leading-relaxed font-light">
-                        At Paragon, we don't just fix cars; we restore peace of mind. Our state-of-the-art facility is equipped to handle everything from minor cosmetic touch-ups to major collision reconstruction. We utilize the latest manufacturer-approved techniques and equipment to ensure your vehicle returns to the road stronger and safer than before.
+                        At Heritage Paint & Body, we don't just fix cars; we restore peace of mind. Our state-of-the-art facility is equipped to handle everything from minor cosmetic touch-ups to major collision reconstruction. We utilize the latest manufacturer-approved techniques and equipment to ensure your vehicle returns to the road stronger and safer than before.
                     </p>
                 </div>
             </section>
