@@ -95,6 +95,22 @@ export function ContactSection() {
                             </div>
 
                             <div className="space-y-2">
+                                <label htmlFor="service" className="text-xs font-bold uppercase text-zinc-500">Service Type</label>
+                                <select
+                                    id="service"
+                                    className="flex h-10 w-full rounded-md border border-zinc-200 bg-zinc-50 px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                                >
+                                    <option value="" disabled selected>Select Service...</option>
+                                    <option value="collision">Collision Repair</option>
+                                    <option value="styling">Auto Styling (Wraps/PPF)</option>
+                                    <option value="paint">Paint Services</option>
+                                    <option value="dent">Dent Removal</option>
+                                    <option value="glass">Glass Repair</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div className="space-y-2">
                                 <label htmlFor="message" className="text-xs font-bold uppercase text-zinc-500">How can we help?</label>
                                 <Textarea id="message" placeholder="Describe your vehicle damage or question..." className="bg-zinc-50 border-zinc-200 min-h-[120px]" />
                             </div>
