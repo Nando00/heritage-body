@@ -1,52 +1,9 @@
-
 import Image from "next/image"
-import { ArrowUpRight } from "lucide-react"
 import { ContactSection } from "@/components/contact-section"
+import { AutoStylingSection } from "@/components/auto-styling-section"
+import { ServicesSection } from "@/components/services-section"
 
 export default function ServicesPage() {
-    const services = [
-        {
-            title: "Collision Repair",
-            description: "Expert restoration to pre-accident condition.",
-            image: "/service-autobody.png"
-        },
-        {
-            title: "Paint Services",
-            description: "Computerized color matching & refinishing.",
-            image: "/service-paint.png"
-        },
-        {
-            title: "Dent Removal",
-            description: "Paintless dent repair for minor dings.",
-            image: "/service-dent.png"
-        },
-        {
-            title: "Glass Repair",
-            description: "Windshield replacement & chip repair.",
-            image: "/service-glass.png"
-        },
-        {
-            title: "Insurance Claims",
-            description: "Direct billing and claim handling.",
-            image: "/service-insurance.png"
-        },
-        {
-            title: "Towing",
-            description: "24/7 towing assistance for our customers.",
-            image: "/service-towing.png"
-        },
-        {
-            title: "Calibration",
-            description: "ADAS sensor & camera calibration.",
-            image: "/service-adas.png"
-        },
-        {
-            title: "Safety Systems",
-            description: "Seat belt & airbag system certified repair.",
-            image: "/service-seatbelt.png"
-        }
-    ]
-
     return (
         <main className="min-h-screen bg-black text-white selection:bg-primary/30">
             {/* Hero Section */}
@@ -80,47 +37,11 @@ export default function ServicesPage() {
                 </div>
             </section>
 
-            {/* Services Grid Section */}
-            <section className="py-24 bg-black">
-                <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {services.map((service, index) => (
-                            <div
-                                key={index}
-                                className="group relative h-[400px] w-full overflow-hidden bg-zinc-900 border border-white/5 transition-all duration-500 hover:border-primary/50"
-                            >
-                                {/* Image Background */}
-                                <Image
-                                    src={service.image}
-                                    alt={service.title}
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-40"
-                                />
+            {/* Auto Styling Section - Added first as requested */}
+            <AutoStylingSection />
 
-                                {/* Gradient Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
-
-                                {/* Content */}
-                                <div className="absolute inset-0 p-8 flex flex-col justify-end items-start transition-all duration-500">
-                                    {/* Icon/Number decoration */}
-                                    <div className="mb-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform -translate-y-4 group-hover:translate-y-0 text-primary">
-                                        <ArrowUpRight className="w-8 h-8" />
-                                    </div>
-
-                                    <div className="transform transition-transform duration-500 group-hover:-translate-y-2">
-                                        <h4 className="text-2xl font-black uppercase tracking-tight text-white mb-2 group-hover:text-primary transition-colors">
-                                            {service.title}
-                                        </h4>
-                                        <p className="text-zinc-400 text-sm leading-relaxed opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-20 transition-all duration-500 overflow-hidden">
-                                            {service.description}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            {/* Services Grid Section - Using shared component for consistency */}
+            <ServicesSection />
 
             {/* Contact Section Reuse */}
             <ContactSection />

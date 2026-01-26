@@ -13,7 +13,7 @@ export function InsurancePartners() {
   ]
 
   // Duplicate partners for seamless infinite scroll
-  const scrollingPartners = [...partners, ...partners]
+  const scrollingPartners = [...partners, ...partners, ...partners, ...partners]
 
   return (
     <section className="py-16 bg-[#0a0a0a] border-y border-white/5 overflow-hidden">

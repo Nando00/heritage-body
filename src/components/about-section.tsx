@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export function AboutSection() {
@@ -69,9 +70,11 @@ export function AboutSection() {
                             ))}
                         </ul>
 
-                        <Button size="lg" className="bg-primary hover:bg-black text-white font-bold uppercase tracking-wider rounded-none w-full sm:w-auto">
-                            Book With Heritage Collision Center
-                        </Button>
+                        <Link href="/contact">
+                            <Button size="lg" className="bg-primary hover:bg-black text-white font-bold uppercase tracking-wider rounded-none w-full sm:w-auto">
+                                Book With Heritage Collision Center
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </div>

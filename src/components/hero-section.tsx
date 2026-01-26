@@ -30,9 +30,11 @@ export function HeroSection() {
                         </h1>
                     </div>
                     <div className="flex flex-col gap-4 sm:flex-row justify-center pt-8">
-                        <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold uppercase text-lg px-10 py-6 h-auto tracking-wider shadow-lg hover:shadow-red-900/20 hover:-translate-y-1 transition-all duration-300">
-                            Book Today
-                        </Button>
+                        <Link href="/contact">
+                            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold uppercase text-lg px-10 py-6 h-auto tracking-wider shadow-lg hover:shadow-red-900/20 hover:-translate-y-1 transition-all duration-300">
+                                Book Today
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </div>

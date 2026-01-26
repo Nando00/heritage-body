@@ -3,7 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, Phone, Facebook, Instagram, Twitter, Linkedin, X, ArrowRight } from "lucide-react"
+import { Menu, Phone, X, ArrowRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -56,13 +56,15 @@ export function Navbar() {
 
                 {/* Desktop CTA */}
                 <div className="hidden md:flex items-center gap-6">
-                    <Link href="tel:+1234567890" className="flex items-center gap-2 text-white/70 hover:text-white transition-colors">
+                    <Link href="tel:+17136674888" className="flex items-center gap-2 text-white/70 hover:text-white transition-colors">
                         <Phone className="size-4" />
-                        <span className="text-xs font-bold tracking-wider">1-800-HERITAGE</span>
+                        <span className="text-xs font-bold tracking-wider">(713) 667-4888</span>
                     </Link>
-                    <Button className="bg-primary hover:bg-primary/90 text-white font-bold uppercase tracking-wider text-xs px-6">
-                        Get Estimate
-                    </Button>
+                    <Link href="/contact">
+                        <Button className="bg-primary hover:bg-primary/90 text-white font-bold uppercase tracking-wider text-xs px-6">
+                            Get Estimate
+                        </Button>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu Trigger */}
@@ -111,15 +113,17 @@ export function Navbar() {
                             {/* Bottom Info */}
                             <div className="space-y-8 mt-12">
                                 <div className="space-y-4">
-                                    <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold uppercase tracking-wider h-14 text-sm">
-                                        Get Free Estimate
-                                    </Button>
+                                    <Link href="/contact">
+                                        <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold uppercase tracking-wider h-14 text-sm">
+                                            Get Free Estimate
+                                        </Button>
+                                    </Link>
                                     <div className="grid grid-cols-2 gap-4">
-                                        <Link href="tel:+1234567890" className="flex items-center justify-center gap-2 h-12 border border-white/10 hover:bg-white/5 rounded transition-colors text-sm font-bold uppercase tracking-wider">
+                                        <Link href="tel:+17136674888" className="flex items-center justify-center gap-2 h-12 border border-white/10 hover:bg-white/5 rounded transition-colors text-sm font-bold uppercase tracking-wider">
                                             <Phone className="size-4" />
                                             Call Us
                                         </Link>
-                                        <Link href="mailto:info@heritage.com" className="flex items-center justify-center gap-2 h-12 border border-white/10 hover:bg-white/5 rounded transition-colors text-sm font-bold uppercase tracking-wider">
+                                        <Link href="mailto:bodyshop@houstoncardirect.com" className="flex items-center justify-center gap-2 h-12 border border-white/10 hover:bg-white/5 rounded transition-colors text-sm font-bold uppercase tracking-wider">
                                             Email
                                         </Link>
                                     </div>
@@ -129,9 +133,6 @@ export function Navbar() {
                                 <div className="pt-8 border-t border-white/5 flex justify-between items-center">
                                     <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/30">Follow Us</span>
                                     <div className="flex gap-4">
-                                        <Link href="#" className="p-2 text-white/50 hover:text-white transition-colors"><Facebook className="size-5" /></Link>
-                                        <Link href="#" className="p-2 text-white/50 hover:text-white transition-colors"><Instagram className="size-5" /></Link>
-                                        <Link href="#" className="p-2 text-white/50 hover:text-white transition-colors"><Twitter className="size-5" /></Link>
                                     </div>
                                 </div>
                             </div>

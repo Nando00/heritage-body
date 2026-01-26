@@ -37,7 +37,7 @@ export function ContactSection() {
                                 </div>
                                 <div>
                                     <h5 className="font-bold uppercase text-lg">Visit Us</h5>
-                                    <p className="text-zinc-400">1234 Auto Park Way, Houston, TX 77000</p>
+                                    <p className="text-zinc-400">5450 Gulfton St, Houston, TX 77081</p>
                                 </div>
                             </div>
 
@@ -47,7 +47,7 @@ export function ContactSection() {
                                 </div>
                                 <div>
                                     <h5 className="font-bold uppercase text-lg">Call Us</h5>
-                                    <p className="text-zinc-400">1-800-HERITAGE (1-800-437-4824)</p>
+                                    <p className="text-zinc-400">(713) 667-4888</p>
                                 </div>
                             </div>
 
@@ -57,7 +57,7 @@ export function ContactSection() {
                                 </div>
                                 <div>
                                     <h5 className="font-bold uppercase text-lg">Email Us</h5>
-                                    <p className="text-zinc-400">info@heritagecollision.com</p>
+                                    <p className="text-zinc-400">bodyshop@houstoncardirect.com</p>
                                 </div>
                             </div>
 

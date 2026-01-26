@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, CheckCircle2 } from "lucide-react"
@@ -60,9 +61,11 @@ export function InsuranceSection() {
                             </div>
                         </div>
 
-                        <Button className="bg-white text-black border-2 border-black hover:bg-black hover:text-white font-bold uppercase tracking-wider h-14 px-8 text-sm transition-all duration-300 rounded-none shadow-sm hover:shadow-lg">
-                            Get Free Full Insurance Assistance
-                        </Button>
+                        <Link href="/contact">
+                            <Button className="bg-white text-black border-2 border-black hover:bg-black hover:text-white font-bold uppercase tracking-wider h-14 px-8 text-sm transition-all duration-300 rounded-none shadow-sm hover:shadow-lg">
+                                Get Free Full Insurance Assistance
+                            </Button>
+                        </Link>
                     </div>
 
                     {/* RIGHT VISUALS */}

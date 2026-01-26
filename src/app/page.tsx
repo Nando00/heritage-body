@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/hero-section";
 import { AboutSection } from "@/components/about-section";
 import { ServicesSection } from "@/components/services-section";
+import { AutoStylingSection } from "@/components/auto-styling-section";
 import { InsuranceSection } from "@/components/insurance-section";
 import { InsurancePartners } from "@/components/insurance-partners";
 import { TestimonialsSection } from "@/components/testimonials-section";
@@ -12,6 +13,10 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <HeroSection />
+
+      <Reveal>
+        <AutoStylingSection />
+      </Reveal>
 
       <Reveal>
         <ServicesSection />

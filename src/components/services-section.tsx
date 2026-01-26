@@ -57,8 +57,8 @@ export function ServicesSection() {
                             Our Expertise
                         </h2>
                         <h3 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-[0.9]">
-                            Premium <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/50">Auto Services</span>
+                            Other <br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/50"> Premium Services</span>
                         </h3>
                     </div>
                     <p className="text-zinc-400 max-w-md text-sm leading-relaxed hidden md:block text-right">

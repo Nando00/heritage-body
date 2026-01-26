@@ -51,6 +51,16 @@ export function Footer() {
                         </ul>
                     </div>
 
+                    {/* Contact Info */}
+                    <div className="space-y-4">
+                        <h4 className="text-lg font-bold uppercase tracking-wider">Contact Us</h4>
+                        <ul className="space-y-2 text-zinc-400">
+                            <li>5450 Gulfton St, Houston, TX 77081</li>
+                            <li>(713) 667-4888</li>
+                            <li>bodyshop@houstoncardirect.com</li>
+                        </ul>
+                    </div>
+
                     {/* Newsletter Removed as requested */}
 
                 </div>
