@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title: "Heritage Paint & Body | Houston Auto Repair",
   description: "Houston's premier auto body shop offering expert collision repair, painting, and insurance assistance.",
   icons: {
-    icon: "/trasnparent-heritage-logo.png",
+    icon: "/favicon.png",
     apple: "/trasnparent-heritage-logo.png",
   },
   openGraph: {
