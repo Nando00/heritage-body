@@ -23,6 +23,22 @@ export const metadata: Metadata = {
     icon: "/trasnparent-heritage-logo.png",
     apple: "/trasnparent-heritage-logo.png",
   },
+  openGraph: {
+    title: "Heritage Paint & Body | Houston Auto Repair",
+    description: "Houston's premier auto body shop offering expert collision repair, painting, and insurance assistance.",
+    url: "https://www.heritagepaintbody.com",
+    siteName: "Heritage Paint & Body",
+    images: [
+      {
+        url: "/hero-bg.png",
+        width: 1200,
+        height: 630,
+        alt: "Heritage Paint & Body Hero Image",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
