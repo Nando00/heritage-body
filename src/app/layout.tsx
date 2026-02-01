@@ -16,8 +16,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.heritagepaintbody.com"),
   title: "Heritage Paint & Body | Houston Auto Repair",
   description: "Houston's premier auto body shop offering expert collision repair, painting, and insurance assistance.",
+  icons: {
+    icon: "/trasnparent-heritage-logo.png",
+    apple: "/trasnparent-heritage-logo.png",
+  },
 };
 
 export default function RootLayout({

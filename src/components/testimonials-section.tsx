@@ -4,19 +4,19 @@ import { Card, CardContent } from "@/components/ui/card"
 export function TestimonialsSection() {
     const reviews = [
         {
-            name: "Michael R.",
+            name: "Datboyak",
             rating: 5,
-            text: "Heritage Paint & Body did an amazing job on my Mercedes. The paint match is perfect and the staff handled all the insurance paperwork. Highly recommend!"
+            text: "Fixed my civic perfectly. Walked me through the whole process. Friendly people"
         },
         {
-            name: "Sarah L.",
+            name: "Maria Krishtalka",
             rating: 5,
-            text: "Fast, professional, and honest. They fixed my dent in less than a day and it looks brand new. Best body shop in Houston."
+            text: "I had a scratch and a small dent on the front bumper. Lorenzo and his team did an amazing job fixing it!! It looks like new!"
         },
         {
-            name: "David K.",
+            name: "Nora Mejia",
             rating: 5,
-            text: "I was stressed after my accident, but the team at Heritage made it easy. They arranged my rental and kept me updated. 10/10 service."
+            text: "The manager Lorenzo was friendly, knowledgeable and very good at explaining what he will do and even went above and beyond what I had asked I am very pleased with the results of the mechanic and other services 👌"
         }
     ]
 
@@ -52,6 +52,17 @@ export function TestimonialsSection() {
                             </CardContent>
                         </Card>
                     ))}
+                </div>
+
+                <div className="mt-16 text-center">
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=Heritage+Paint+Body+5450+Gulfton+St+Houston+TX"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center px-8 py-3 bg-black text-white font-bold uppercase tracking-wider hover:bg-zinc-800 transition-colors rounded"
+                    >
+                        View More Reviews on Google
+                    </a>
                 </div>
             </div>
         </section>
