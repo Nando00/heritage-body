@@ -19,10 +19,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.heritagepaintbody.com"),
   title: "Heritage Paint & Body | Houston Auto Repair",
   description: "Houston's premier auto body shop offering expert collision repair, painting, and insurance assistance.",
-  icons: {
-    icon: "/favicon.png",
-    apple: "/trasnparent-heritage-logo.png",
-  },
   openGraph: {
     title: "Heritage Paint & Body | Houston Auto Repair",
     description: "Houston's premier auto body shop offering expert collision repair, painting, and insurance assistance.",
