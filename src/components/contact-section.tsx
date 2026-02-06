@@ -4,8 +4,51 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { useState } from "react"
 
 export function ContactSection() {
+    const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle")
+    const [errorMessage, setErrorMessage] = useState("")
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+        const form = e.currentTarget
+        setStatus("submitting")
+        setErrorMessage("")
+
+        const formData = new FormData(form)
+        const data = {
+            name: formData.get('name'),
+            phone: formData.get('phone'),
+            email: formData.get('email'),
+            service: formData.get('service'),
+            message: formData.get('message'),
+        }
+
+        try {
+            const response = await fetch('/api/send', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+
+            const result = await response.json()
+
+            if (!response.ok) {
+                throw new Error(result.error || 'Failed to send message')
+            }
+
+            setStatus("success")
+            form.reset()
+        } catch (error) {
+            console.error('Submission error:', error)
+            setStatus("error")
+            setErrorMessage(error instanceof Error ? error.message : "Something went wrong.")
+        }
+    }
+
     return (
         <section id="contact" className="py-24 bg-black text-white relative">
             {/* Background Image Overlay */}
@@ -77,30 +120,32 @@ export function ContactSection() {
                     {/* Contact Form */}
                     <div className="bg-white text-black p-8 md:p-12 shadow-2xl">
                         <h3 className="text-2xl font-black uppercase mb-6">Send Us A Message</h3>
-                        <form className="space-y-4">
+                        <form onSubmit={handleSubmit} className="space-y-4">
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="space-y-2">
                                     <label htmlFor="name" className="text-xs font-bold uppercase text-zinc-500">Name</label>
-                                    <Input id="name" placeholder="John Doe" className="bg-zinc-50 border-zinc-200" />
+                                    <Input name="name" id="name" placeholder="John Doe" className="bg-zinc-50 border-zinc-200" required />
                                 </div>
                                 <div className="space-y-2">
                                     <label htmlFor="phone" className="text-xs font-bold uppercase text-zinc-500">Phone</label>
-                                    <Input id="phone" placeholder="(555) 123-4567" className="bg-zinc-50 border-zinc-200" />
+                                    <Input name="phone" id="phone" placeholder="(555) 123-4567" className="bg-zinc-50 border-zinc-200" required />
                                 </div>
                             </div>
 
                             <div className="space-y-2">
                                 <label htmlFor="email" className="text-xs font-bold uppercase text-zinc-500">Email</label>
-                                <Input id="email" type="email" placeholder="john@example.com" className="bg-zinc-50 border-zinc-200" />
+                                <Input name="email" id="email" type="email" placeholder="john@example.com" className="bg-zinc-50 border-zinc-200" required />
                             </div>
 
                             <div className="space-y-2">
                                 <label htmlFor="service" className="text-xs font-bold uppercase text-zinc-500">Service Type</label>
                                 <select
+                                    name="service"
                                     id="service"
                                     className="flex h-10 w-full rounded-md border border-zinc-200 bg-zinc-50 px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                                    defaultValue=""
                                 >
-                                    <option value="" disabled selected>Select Service...</option>
+                                    <option value="" disabled>Select Service...</option>
                                     <option value="collision">Collision Repair</option>
                                     <option value="styling">Auto Styling (Wraps/PPF)</option>
                                     <option value="paint">Paint & Body</option>
@@ -112,12 +157,27 @@ export function ContactSection() {
 
                             <div className="space-y-2">
                                 <label htmlFor="message" className="text-xs font-bold uppercase text-zinc-500">How can we help?</label>
-                                <Textarea id="message" placeholder="Describe your vehicle damage or question..." className="bg-zinc-50 border-zinc-200 min-h-[120px]" />
+                                <Textarea name="message" id="message" placeholder="Describe your vehicle damage or question..." className="bg-zinc-50 border-zinc-200 min-h-[120px]" required />
                             </div>
 
-                            <Button size="lg" className="w-full bg-primary hover:bg-black text-white font-bold uppercase tracking-wider h-12 rounded-none mt-2">
-                                Submit Message
+                            <Button
+                                disabled={status === "submitting"}
+                                size="lg"
+                                className="w-full bg-primary hover:bg-black text-white font-bold uppercase tracking-wider h-12 rounded-none mt-2"
+                            >
+                                {status === "submitting" ? "Sending..." : "Submit Message"}
                             </Button>
+
+                            {status === "success" && (
+                                <p className="text-green-600 text-center text-sm font-bold animate-in fade-in slide-in-from-bottom-2 mt-4">
+                                    Message sent successfully!
+                                </p>
+                            )}
+                            {status === "error" && (
+                                <p className="text-red-500 text-center text-sm font-bold animate-in fade-in slide-in-from-bottom-2 mt-4">
+                                    {errorMessage}
+                                </p>
+                            )}
                         </form>
                     </div>
 
