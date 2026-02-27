@@ -123,7 +123,7 @@ export function Navbar() {
                                             <Phone className="size-4" />
                                             Call Us
                                         </Link>
-                                        <Link href="mailto:bodyshop@houstoncardirect.com" className="flex items-center justify-center gap-2 h-12 border border-white/10 hover:bg-white/5 rounded transition-colors text-sm font-bold uppercase tracking-wider">
+                                        <Link href="mailto:heritagepaintbody@gmail.com" className="flex items-center justify-center gap-2 h-12 border border-white/10 hover:bg-white/5 rounded transition-colors text-sm font-bold uppercase tracking-wider">
                                             Email
                                         </Link>
                                     </div>

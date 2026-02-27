@@ -106,7 +106,7 @@ export default function AboutPage() {
                                     </div>
                                     <div>
                                         <p className="text-xs uppercase tracking-widest text-white/40">Email</p>
-                                        <p className="font-bold">bodyshop@houstoncardirect.com</p>
+                                        <p className="font-bold">heritagepaintbody@gmail.com</p>
                                     </div>
                                 </div>
 

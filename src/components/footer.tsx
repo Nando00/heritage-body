@@ -57,7 +57,7 @@ export function Footer() {
                         <ul className="space-y-2 text-zinc-400">
                             <li>5450 Gulfton St, Houston, TX 77081</li>
                             <li>(713) 667-4888</li>
-                            <li>bodyshop@houstoncardirect.com</li>
+                            <li>heritagepaintbody@gmail.com</li>
                         </ul>
                     </div>
 

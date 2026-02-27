@@ -100,7 +100,7 @@ export function ContactSection() {
                                 </div>
                                 <div>
                                     <h5 className="font-bold uppercase text-lg">Email Us</h5>
-                                    <p className="text-zinc-400">bodyshop@houstoncardirect.com</p>
+                                    <p className="text-zinc-400">heritagepaintbody@gmail.com</p>
                                 </div>
                             </div>
 
